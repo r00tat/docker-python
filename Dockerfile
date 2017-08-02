@@ -36,7 +36,7 @@ RUN apt-get update && apt-get -y upgrade && \
         stable") && \
     apt-get update && \
     apt-get -y install \
-        docker-ce=$(apt-cache show docker-ce | grep 'Version:' | awk '{print $NF}' | grep "$DOCKER_VERSION" | head -n 1) && \
+        docker-ce && \
     rm -rf /var/lib/apt/lists/*
 
 ENV ENDPOINTS_GAE_SDK /usr/lib/google-cloud-sdk
