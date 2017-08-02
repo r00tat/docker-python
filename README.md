@@ -1,5 +1,5 @@
 # docker-python
-This image is intented for the build process wich includes docker, python and bower.
+This image is intended for the build process wich includes docker, python and bower.
 
 The image includes the following software
 
